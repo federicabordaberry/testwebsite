@@ -19,7 +19,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-image: url(background.jpg);
+			background-image: url(https://www.applesfromny.com/wp-content/uploads/2017/05/Macoun-1.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
 			z-index: -1;
@@ -70,7 +70,7 @@
 		<div class="background"></div>
 		<div class="content">
 			<div class="text">
-				<p>Hi there, Helen</p>
+				<p>Hello there, Helen.</p>
 			</div>
 			<div class="code">
 				<span>def hello_world():</span><br>
@@ -79,9 +79,20 @@
 				<span># call the function</span><br>
 				&nbsp;&nbsp;&nbsp;&nbsp;<span>hello_world()</span>
 			</div>
-			<img src="Captura de Pantalla 2023-02-07 a la(s) 11.30.38.jpg" alt="Image" width="600">
+			<img src="https://www.applesfromny.com/wp-content/uploads/2017/05/Macoun-1.jpg" alt="Image" width="600">
 		</div>
 	</div>
 	<script>
 		// add smooth scrolling
-		document.querySelectorAll
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		});
+	</script>
+</body>
+</html>
